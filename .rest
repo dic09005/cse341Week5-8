@@ -1,0 +1,21 @@
+
+
+GET http://localhost:3000/players HTTP/1.1
+
+###
+GET http://localhost:3000/players/6463fbda42cd87d618668f53 HTTP/1.1
+
+### Post is to create new contact
+POST http://localhost:3000/players
+Content-Type: application/json
+
+{
+    "firstName": "Patrice",
+    "lastName": "Bergeron",
+    "jerseyNumber": "#37",
+    "team": "Boston Bruins",
+    "possition": "Center",
+    "birthday": "July 24, 1985",
+    "age": "37"
+}
+
