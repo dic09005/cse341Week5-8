@@ -5,7 +5,7 @@
     "description": "NHL Players API",
     "version": "1.0.0"
   },
-  "host": "dickson341test.onrender.com",
+  "host": "dickson341-5-8.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"

@@ -5,7 +5,7 @@ const doc = {
     title: 'My API',
     description: 'NHL Players API',
   },
-  host: 'dickson341test.onrender.com',
+  host: 'dickson341-5-8.onrender.com',
   schemes: ['https'],
 };
 
