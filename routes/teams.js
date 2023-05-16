@@ -3,11 +3,11 @@ const router = express.Router();
 
 const myController = require('../controllers/index')
 
-router.get('/', myController.getPlayerData);
+router.get('/', myController.getTeamData);
 
-router.get('/:id', myController.getPlayerObject);
+router.get('/:id', myController.getTeamObject);
 
-router.post('/', myController.createPlayer);
+router.post('/', myController.createTeam);
 
 
 module.exports = router;

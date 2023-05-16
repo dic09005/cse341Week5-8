@@ -10,12 +10,70 @@ POST http://localhost:3000/players
 Content-Type: application/json
 
 {
-    "firstName": "Patrice",
-    "lastName": "Bergeron",
-    "jerseyNumber": "#37",
+    "firstName": "Brad",
+    "lastName": "Marchand",
+    "jerseyNumber": "#63",
     "team": "Boston Bruins",
-    "possition": "Center",
-    "birthday": "July 24, 1985",
-    "age": "37"
+    "possition": "Left Wing",
+    "birthday": "May 11, 1988",
+    "age": "35"
 }
 
+
+###
+GET https://dickson341-5-8.onrender.com/players HTTP/1.1
+
+###
+GET https://dickson341-5-8.onrender.com/players/646401b3f49c30e8a0f926a7 HTTP/1.1
+
+### Post is to create new contact
+POST https://dickson341-5-8.onrender.com/players
+Content-Type: application/json
+
+{
+    "firstName": "Connor",
+    "lastName": "Clifton",
+    "jerseyNumber": "#75",
+    "team": "Boston Bruins",
+    "possition": "Defense",
+    "birthday": "April 28, 1995",
+    "age": "28"
+}
+
+
+###
+GET http://localhost:3000/teams HTTP/1.1
+
+###
+GET http://localhost:3000/teams/64640a19da6436679d15a5a9 HTTP/1.1
+
+### Post is to create new contact
+POST http://localhost:3000/teams
+Content-Type: application/json
+
+{
+    "teamName": "Boston Bruins",
+    "city": "Boston Massachusetts",
+    "conference": "Eastern",
+    "division": "Atlantic",
+    "coach": "JIM MONTGOMERY"
+}
+
+
+###
+GET https://dickson341-5-8.onrender.com/teams HTTP/1.1
+
+###
+GET https://dickson341-5-8.onrender.com/teams/64640a19da6436679d15a5a9 HTTP/1.1
+
+### Post is to create new contact
+POST https://dickson341-5-8.onrender.com/teams
+Content-Type: application/json
+
+{
+    "teamName": "Seattle Kraken",
+    "city": "Seattle Washington",
+    "conference": "Western",
+    "division": "Pacific",
+    "coach": "Dave Hakstol"
+}
