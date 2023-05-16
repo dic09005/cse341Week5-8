@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "My API",
-    "description": "Contacts API",
+    "description": "NHL Players API",
     "version": "1.0.0"
   },
   "host": "dickson341test.onrender.com",
@@ -18,7 +18,7 @@
         "responses": {}
       }
     },
-    "/contacts/": {
+    "/players/": {
       "get": {
         "description": "",
         "produces": [
@@ -33,11 +33,49 @@
       },
       "post": {
         "description": "",
-        "parameters": [],
-        "responses": {}
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "jerseyNumber": {
+                  "example": "any"
+                },
+                "team": {
+                  "example": "any"
+                },
+                "possition": {
+                  "example": "any"
+                },
+                "birthday": {
+                  "example": "any"
+                },
+                "age": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
       }
     },
-    "/contacts/{id}": {
+    "/players/{id}": {
       "get": {
         "description": "",
         "produces": [
