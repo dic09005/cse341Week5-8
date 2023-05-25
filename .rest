@@ -70,7 +70,7 @@ Content-Type: application/json
 
 {
     "firstName": "Brad",
-    "lastName": "Marchand",
+    "lastName": "Marchi",
     "jerseyNumber": "#63",
     "team": "Boston Bruins",
     "possition": "Left Wing",
@@ -79,7 +79,7 @@ Content-Type: application/json
 }
 
 ### DELETE is to DELETE Player
-DELETE  https://dickson341-5-8.onrender.com/players/646ebe4371446bb92e706f4c HTTP/1.1
+DELETE  https://dickson341-5-8.onrender.com/players/646ebc3b194f7261740ebd84 HTTP/1.1
 
 #***********************************************************************************************************************************
 #********************************************************** LOCALHOST *****************************************************************
@@ -104,11 +104,11 @@ Content-Type: application/json
 }
 
 ### PUT is to update Team
-PUT http://localhost:3000/teams/646ebc49194f7261740ebd85
+PUT http://localhost:3000/teams/646ec576e09b36041cb34560
 Content-Type: application/json
 
 {
-    "teamName": "Boston Bruins",
+    "teamName": "The Boston Bruins",
     "city": "Boston Massachusetts",
     "conference": "Eastern",
     "division": "Atlantic",
@@ -116,7 +116,7 @@ Content-Type: application/json
 }
 
 ### DELETE is to DELETE Team
-DELETE  http://localhost:3000/teams/646ebe4371446bb92e706f4c HTTP/1.1
+DELETE  http://localhost:3000/teams/646ec576e09b36041cb34560 HTTP/1.1
 
 #***********************************************************************************************************************************
 #************************************************************** RENDER *************************************************************
@@ -126,7 +126,7 @@ DELETE  http://localhost:3000/teams/646ebe4371446bb92e706f4c HTTP/1.1
 GET https://dickson341-5-8.onrender.com/teams HTTP/1.1
 
 ###
-GET https://dickson341-5-8.onrender.com/teams/64640a19da6436679d15a5a9 HTTP/1.1
+GET https://dickson341-5-8.onrender.com/teams/646ec60762731f4434e56ae2 HTTP/1.1
 
 ### Post is to create new Team
 POST https://dickson341-5-8.onrender.com/teams
@@ -141,11 +141,11 @@ Content-Type: application/json
 }
 
 ### PUT is to update Teams
-PUT https://dickson341-5-8.onrender.com/teams/646ebc49194f7261740ebd85
+PUT https://dickson341-5-8.onrender.com/teams/646ec60762731f4434e56ae2
 Content-Type: application/json
 
 {
-    "teamName": "Boston Bruins",
+    "teamName": "The Boston Bruins",
     "city": "Boston Massachusetts",
     "conference": "Eastern",
     "division": "Atlantic",
@@ -153,4 +153,4 @@ Content-Type: application/json
 }
 
 ### DELETE is to DELETE Teams
-DELETE  https://dickson341-5-8.onrender.com/teams/646ebe4371446bb92e706f4c HTTP/1.1
+DELETE  https://dickson341-5-8.onrender.com/teams/646ec60762731f4434e56ae2 HTTP/1.1
