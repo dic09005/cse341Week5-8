@@ -1,11 +1,14 @@
+#***********************************************************************************************************************************
+#********************************************************** LOCALHOST *****************************************************************
+#***********************************************************************************************************************************
 
-
+###
 GET http://localhost:3000/players HTTP/1.1
 
 ###
 GET http://localhost:3000/players/6463fbda42cd87d618668f53 HTTP/1.1
 
-### Post is to create new contact
+### Post is to create new Player
 POST http://localhost:3000/players
 Content-Type: application/json
 
@@ -20,13 +23,34 @@ Content-Type: application/json
 }
 
 
+### PUT is to update Player
+PUT http://localhost:3000/players/646ebc49194f7261740ebd85
+Content-Type: application/json
+
+{
+    "firstName": "Brad",
+    "lastName": "Marchand",
+    "jerseyNumber": "#63",
+    "team": "Boston Bruins",
+    "possition": "Left Wing",
+    "birthday": "May 11, 1988",
+    "age": "35"
+}
+
+### DELETE is to DELETE Player
+DELETE  http://localhost:3000/players/646ebe4371446bb92e706f4c HTTP/1.1
+
+#***********************************************************************************************************************************
+#************************************************************** RENDER *************************************************************
+#***********************************************************************************************************************************
+
 ###
 GET https://dickson341-5-8.onrender.com/players HTTP/1.1
 
 ###
 GET https://dickson341-5-8.onrender.com/players/646401b3f49c30e8a0f926a7 HTTP/1.1
 
-### Post is to create new contact
+### Post is to create new Player
 POST https://dickson341-5-8.onrender.com/players
 Content-Type: application/json
 
@@ -40,6 +64,26 @@ Content-Type: application/json
     "age": "28"
 }
 
+### PUT is to update Player
+PUT https://dickson341-5-8.onrender.com/players/646ebc49194f7261740ebd85
+Content-Type: application/json
+
+{
+    "firstName": "Brad",
+    "lastName": "Marchand",
+    "jerseyNumber": "#63",
+    "team": "Boston Bruins",
+    "possition": "Left Wing",
+    "birthday": "May 11, 1988",
+    "age": "35"
+}
+
+### DELETE is to DELETE Player
+DELETE  https://dickson341-5-8.onrender.com/players/646ebe4371446bb92e706f4c HTTP/1.1
+
+#***********************************************************************************************************************************
+#********************************************************** LOCALHOST *****************************************************************
+#***********************************************************************************************************************************
 
 ###
 GET http://localhost:3000/teams HTTP/1.1
@@ -47,7 +91,7 @@ GET http://localhost:3000/teams HTTP/1.1
 ###
 GET http://localhost:3000/teams/64640a19da6436679d15a5a9 HTTP/1.1
 
-### Post is to create new contact
+### Post is to create new Team
 POST http://localhost:3000/teams
 Content-Type: application/json
 
@@ -59,6 +103,24 @@ Content-Type: application/json
     "coach": "JIM MONTGOMERY"
 }
 
+### PUT is to update Team
+PUT http://localhost:3000/teams/646ebc49194f7261740ebd85
+Content-Type: application/json
+
+{
+    "teamName": "Boston Bruins",
+    "city": "Boston Massachusetts",
+    "conference": "Eastern",
+    "division": "Atlantic",
+    "coach": "JIM MONTGOMERY"
+}
+
+### DELETE is to DELETE Team
+DELETE  http://localhost:3000/teams/646ebe4371446bb92e706f4c HTTP/1.1
+
+#***********************************************************************************************************************************
+#************************************************************** RENDER *************************************************************
+#***********************************************************************************************************************************
 
 ###
 GET https://dickson341-5-8.onrender.com/teams HTTP/1.1
@@ -66,7 +128,7 @@ GET https://dickson341-5-8.onrender.com/teams HTTP/1.1
 ###
 GET https://dickson341-5-8.onrender.com/teams/64640a19da6436679d15a5a9 HTTP/1.1
 
-### Post is to create new contact
+### Post is to create new Team
 POST https://dickson341-5-8.onrender.com/teams
 Content-Type: application/json
 
@@ -77,3 +139,18 @@ Content-Type: application/json
     "division": "Pacific",
     "coach": "Dave Hakstol"
 }
+
+### PUT is to update Teams
+PUT https://dickson341-5-8.onrender.com/teams/646ebc49194f7261740ebd85
+Content-Type: application/json
+
+{
+    "teamName": "Boston Bruins",
+    "city": "Boston Massachusetts",
+    "conference": "Eastern",
+    "division": "Atlantic",
+    "coach": "JIM MONTGOMERY"
+}
+
+### DELETE is to DELETE Teams
+DELETE  https://dickson341-5-8.onrender.com/teams/646ebe4371446bb92e706f4c HTTP/1.1
