@@ -8,7 +8,7 @@ router.get('/', myController.getPlayerData);
 
 router.get('/:id', myController.getPlayerObject);
 
-router.post('/', myController.createPlayer);
+router.post('/', validation.savePlayer, myController.createPlayer);
 
 router.put('/:id', validation.savePlayer, myController.updatePlayer);
 

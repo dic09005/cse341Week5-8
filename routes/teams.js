@@ -8,7 +8,7 @@ router.get('/', myController.getTeamData);
 
 router.get('/:id', myController.getTeamObject);
 
-router.post('/', myController.createTeam);
+router.post('/', validation.saveTeam, myController.createTeam);
 
 router.put('/:id', validation.saveTeam, myController.updateTeam);
 
