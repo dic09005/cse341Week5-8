@@ -1,12 +1,9 @@
 const bodyParser = require('body-parser');
-
 const mongodb = require('./db/connect');
-
 const express = require('express');
-
 const app = express()
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT
 
 app
   .use(bodyParser.json())
@@ -14,7 +11,7 @@ app
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
   })
-  .use('/', require('./routes '));
+  .use('/', require('../cse341Week5-8/routes'));
 
 process.on('uncaughtException', (err, origin) => {
   console.log(process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`);
