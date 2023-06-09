@@ -26,8 +26,7 @@ router.get('/profile', requiresAuth(), (req, res) => {
 });
 
 router.use('/', require('./swagger'));
-router.use('/players', requiresAuth(), require('./players'));
-router.use('/teams', requiresAuth(), require('./teams'));
-router.use('/teamsnoauth', require('./teams'));
+router.use('/players', require('./players'));
+router.use('/teams', require('./teams'));
 
 module.exports = router; 
